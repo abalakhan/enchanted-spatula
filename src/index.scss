@@ -1,0 +1,42 @@
+@use 'sass:color';
+
+$charcoal: #292929;
+$light-green: #CADCAE;
+$carrot: #EDA35A;
+
+// ***** HEADER *****
+nav { 
+
+    .nav-wrapper {
+
+        .brand-logo {
+            color: $charcoal;
+        }
+
+        background-color: $light-green;
+
+        .logo-img {
+            width: 12%;
+            height: auto;
+        }
+    }
+}
+// ***** INPUT SECTION *****
+
+// ***** GET RECIPE SECTION *****
+.generate-recipe {
+    padding: 5%;
+    margin: 5% 0;
+    background-color: $carrot;
+    color: $charcoal;
+    display: flex;
+
+    span {
+        font-size: 1.3rem;
+    }
+
+    button {
+        margin-left: 2%;
+        justify-content: flex-end;
+    }
+}
