@@ -13,7 +13,7 @@ export default function IngredientList(props: IngredientListProps) {
         return (
             <>
                 <section className="ingredients-section">
-                    {props.ingredients.length >= 0 && (
+                    {props.ingredients.length >= 1 && (
                         <>
                             <div>
                                 <h5>Your ingredients:</h5>

@@ -6,7 +6,7 @@ import RecipeSection from "./RecipeSection";
 
 export default function Body() {
     
-    const [ingredients, setIngredients] = useState<string[]>(["oregano", "tomato sauce", "pasta"]);
+    const [ingredients, setIngredients] = useState<string[]>([]);
     const [recipe, setRecipe] = useState<string>();
 
     // reference: http://react.dev/reference/react-dom/components/form
@@ -25,10 +25,12 @@ export default function Body() {
     return (
         <>
             <div className="input-section">
-                <h3>Enter your ingredients!</h3>
+                <h4>Enter your ingredients!</h4>
+                <p>Spatula will generate a recipe for you based on the ingredients you have.</p>
+                <p>Works best with at least 3 ingredients.</p>
                     <form action={addIngredient}>
-                        <input name="ingredient" placeholder="mom's spagetti" id="ingredient" type="text" className="validate" />
-                        <button className="waves-effect waves-light btn">Add Ingredient</button>
+                        <input name="ingredient" placeholder="e.g. dill" id="ingredient" type="text" className="validate" />
+                        <button className="waves-effect waves-light btn-small">Add Ingredient</button>
                     </form>
 
                 <IngredientList ingredients={ingredients} getRecipe={getRecipe} />

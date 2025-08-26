@@ -12,6 +12,7 @@ function App() {
       <main>
       <Body />
       </main>
+      <img className="bottom-banner" src="src/assets/spatula-banner.png" alt="decorative banner with statula, kitchen utensils and vegetableds dancing around" />
       <Footer />
     </>
   )
