@@ -9,7 +9,9 @@ function App() {
   return (
     <>
       <Header />
+      <main>
       <Body />
+      </main>
       <Footer />
     </>
   )

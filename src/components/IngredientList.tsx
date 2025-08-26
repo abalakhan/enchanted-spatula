@@ -12,19 +12,23 @@ export default function IngredientList(props: IngredientListProps) {
         
         return (
             <>
-                <section>
-                    {props.ingredients.length > 3 && (
+                <section className="ingredients-section">
+                    {props.ingredients.length >= 0 && (
                         <>
                             <div>
-                                <h4>Your ingredients:</h4>
+                                <h5>Your ingredients:</h5>
                                 <ul>
                                     {ingredientList}
                                 </ul>
                             </div>
 
                             <section className="generate-recipe">
-                                <span>Ready for a recipe?</span>
-                                <button onClick={() => props.getRecipe(props.ingredients)} className="waves-effect waves-light btn">Get my Recipe</button>
+                                <div>
+                                    <h6>Ready for a recipe?</h6>
+                                    <p>Spatula will talk to the chef to generate a recipe based on your ingredients.</p>
+                                </div>
+
+                                <button onClick={() => props.getRecipe(props.ingredients)} className="waves-effect waves-light">Get a Recipe</button>
                             </section>
                         </>
                     )}

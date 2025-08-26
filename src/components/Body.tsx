@@ -6,7 +6,7 @@ import RecipeSection from "./RecipeSection";
 
 export default function Body() {
     
-    const [ingredients, setIngredients] = useState<string[]>([]);
+    const [ingredients, setIngredients] = useState<string[]>(["oregano", "tomato sauce", "pasta"]);
     const [recipe, setRecipe] = useState<string>();
 
     // reference: http://react.dev/reference/react-dom/components/form
@@ -24,11 +24,11 @@ export default function Body() {
 
     return (
         <>
-            <div className="container">
+            <div className="input-section">
                 <h3>Enter your ingredients!</h3>
                     <form action={addIngredient}>
                         <input name="ingredient" placeholder="mom's spagetti" id="ingredient" type="text" className="validate" />
-                        <button className="waves-effect waves-light btn">Add</button>
+                        <button className="waves-effect waves-light btn">Add Ingredient</button>
                     </form>
 
                 <IngredientList ingredients={ingredients} getRecipe={getRecipe} />
