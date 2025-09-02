@@ -1,4 +1,4 @@
-import spatulaLogo from "./assets/enchanted-spatula.png";
+import spatulaLogo from "../assets/enchanted-spatula.png";
 
 export default function Header() {
 
